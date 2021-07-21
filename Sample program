@@ -1,0 +1,25 @@
+import java.util.*;
+class a
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+HashMap<Integer,String> x =new HashMap<Integer,String>();
+x.put(101,"Tom");
+x.put(105,"Jerry");
+x.put(109,"Sam");
+System.out.println(x.values());
+for(Map.Entry<Integer,String> i:x.entrySet())
+{
+System.out.println(i.getKey()+" "+i.getValue());
+}
+}
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT:
+C:\Users\hp>javac a.java
+C:\Users\hp>java a
+[Tom, Jerry, Sam]
+101 Tom
+105 Jerry
+109 Sam
